@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "Tobiasz Maj <tobiaszmaj1@gmail.com>",
-  "homepage": "https://tobiaszmaj.github.io/To-Do-List",
+  "homepage": "https://tobiaszmaj.github.io/To-Do-List/",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
     "gh-pages": "^2.0.1",
@@ -48,6 +47,7 @@
     "shelljs": "^0.7.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
+    "vue-gh-pages": "^1.19.0",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
