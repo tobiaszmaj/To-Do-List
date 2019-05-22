@@ -1,6 +1,5 @@
 <template>
   <div id="app" class="container">
-    <img src="./assets/logo.png" class="logo">
     <todo-list></todo-list>
   </div>
 </template>
@@ -19,28 +18,35 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+
 body {
   box-sizing: border-box;
+  background-image: url(./assets/background.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  margin: auto;
 }
 
 .container {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.logo {
-  display: block;
-  margin: 20px auto;
-  height: 75px;
+  background: transparent;
+  font-size: 20px;
+  width: 27rem;
+  margin-left: 28.5rem;
+  padding: 5rem 1em;
 }
 
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: "Indie Flower", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /*text-align: center;*/
   color: #2c3e50;
   margin-top: 60px;
-  font-size: 24px;
+  font-size: 28px;
 }
 </style>

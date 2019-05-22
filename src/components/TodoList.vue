@@ -3,7 +3,7 @@
     <input
       type="text"
       class="todo-input"
-      placeholder="What needs to be done"
+      placeholder="Type here new todo..."
       v-model="newTodo"
       @keyup.enter="addTodo"
     >
@@ -60,13 +60,13 @@ export default {
       todos: [
         {
           id: 1,
-          title: "Finish Vue Screencast",
-          completed: false,
+          title: "Find a new job",
+          completed: true,
           editing: false
         },
         {
           id: 2,
-          title: "Take over world",
+          title: "Clean the house",
           completed: false,
           editing: false
         }
@@ -141,11 +141,17 @@ export default {
 
 <style lang="scss">
 @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
+
 .todo-input {
-  width: 100%;
+  font-family: "Indie Flower", cursive;
+  background: transparent;
+  width: 90%;
   padding: 10px 18px;
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 16px;
+  border: none;
+  outline: none;
   &:focus {
     outline: 0;
   }
@@ -171,7 +177,6 @@ export default {
 }
 .todo-item-label {
   padding: 10px;
-  border: 1px solid white;
   margin-left: 12px;
 }
 .todo-item-edit {
@@ -195,23 +200,24 @@ export default {
   align-items: center;
   justify-content: space-between;
   font-size: 16px;
-  border-top: 1px solid lightgrey;
   padding-top: 14px;
   margin-bottom: 14px;
 }
+
 button {
-  font-size: 14px;
-  background-color: white;
+  font-family: "Indie Flower", cursive;
+  font-size: 15px;
+  background: transparent;
   appearance: none;
   &:hover {
-    background: lightgreen;
+    background: greenyellow;
   }
   &:focus {
     outline: none;
   }
 }
 .active {
-  background: lightgreen;
+  background: greenyellow;
 }
 // CSS Transitions
 .fade-enter-active,
