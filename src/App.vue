@@ -49,4 +49,18 @@ body {
   margin-top: 60px;
   font-size: 28px;
 }
+
+@media screen and (max-width: 580px) {
+  #app {
+    font-size: 20px;
+    margin-top: 3rem;
+  }
+
+  .container {
+    font-size: 15px;
+    width: 20rem;
+    margin-left: 1rem;
+    padding: 5rem 1em;
+  }
+}
 </style>
