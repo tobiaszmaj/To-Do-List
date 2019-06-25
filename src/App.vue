@@ -20,11 +20,15 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower&display=swap");
 
+* {
+  font-size: 1.5vw;
+}
+
 body {
   box-sizing: border-box;
   background-image: url(./assets/background.jpg);
   background-position: top;
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vw;
@@ -34,10 +38,9 @@ body {
 
 .container {
   background: transparent;
-  font-size: 20px;
-  width: 27rem;
-  margin-left: 28.5rem;
-  padding: 5rem 1em;
+  width: 27vw;
+  margin-left: 35vw;
+  padding: 12vh 1vw;
 }
 
 #app {
@@ -47,7 +50,6 @@ body {
   /*text-align: center;*/
   color: #2c3e50;
   margin-top: 60px;
-  font-size: 28px;
 }
 
 @media screen and (max-width: 580px) {
