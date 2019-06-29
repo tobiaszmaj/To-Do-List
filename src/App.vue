@@ -53,16 +53,22 @@ body {
 }
 
 @media screen and (max-width: 580px) {
-  #app {
-    font-size: 20px;
-    margin-top: 3rem;
+  * {
+    font-size: 5vw;
+  }
+
+  body {
+    background-image: url(./assets/background.jpg);
+    background-position: top;
+    background-size: 300%;
+    background-repeat: no-repeat;
   }
 
   .container {
-    font-size: 15px;
-    width: 20rem;
-    margin-left: 1rem;
-    padding: 5rem 1em;
+    background: transparent;
+    width: 100vw;
+    margin-left: 2vw;
+    padding: 12vh 1vw;
   }
 }
 </style>
