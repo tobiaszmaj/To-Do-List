@@ -14,7 +14,7 @@
   "dependencies": {
     "ajv": "^6.10.0",
     "gh-pages": "^2.0.1",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "sass-loader": "^7.1.0",
     "vue": "^2.5.2",
     "vue-cli": "^2.9.6",
